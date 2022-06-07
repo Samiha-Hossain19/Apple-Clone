@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont;
+}
+.navbar {
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+.nav-items {
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  /* margin-top: 50px; */
+}
+.nav-items img {
+  display: flex;
+
+  height: 40px;
+  /* align-items: center; */
+}
+.nav-items > li {
+  margin: 0 15px;
+  opacity: 0.8;
+}
+.nav-items > li:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* Content Part Style */
+.notice {
+  background-color: #f5f5f7;
+  padding: 10px;
+  font-size: 13px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #06c;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.iPhone-13-pro {
+  background-color: white;
+}
+.iPhone-13 {
+  background-color: #35283c;
+}
+.watch {
+  background-color: #f5f5f7;
+}
+
+.text-light {
+  color: white;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-items: center;
+}
+
+.title {
+  margin: 30px 0;
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 25px;
+  line-height: 20px;
+}
+.product-img {
+  grid-column: 1 /-1;
+}
+
+.iPhone-13-pro > .product-img > img {
+  max-width: 650px;
+}
+
+.iPhone-13 > .product-img > img {
+  max-width: 900px;
+}
+.watch > .product-img > img {
+  max-width: 1200px;
+}
+
+.product-img img {
+  width: 100%;
+}
+
+.showcase {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+}
+
+.showcase:nth-child(odd) {
+  margin-left: 15px;
+}
+
+.card {
+  background-color: #fbfbfd;
+}
+
+.tv {
+  background-image: url("../images/tv.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.showcase .title {
+  font-size: 22px;
+}
+
+.tv > .title {
+  align-self: flex-end;
+}
+
+.showcase .product-img img {
+  max-width: 650px;
+}
